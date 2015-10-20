@@ -9,14 +9,15 @@ Instructions:
 Installation:
 
         $ git clone git@github.com:lenguyenthedat/trailing-spaces-removal.git
+        $ cp tsrm /usr/local/bin/ # optional
 
 Running on local directory:
 
-        $ ./removes.sh .
+        $ ./tsrm .
         Input folder: .
         Going remove trailing white spaces for:
         ./README.md
-        ./removes.sh
+        ./tsrm
         ./test/some_file_with_trailing_spaces.txt
         ./test/test_child_folder/another_file_with_trailing_spaces.txt
         Are you sure to proceed? y
