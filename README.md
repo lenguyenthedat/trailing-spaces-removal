@@ -2,6 +2,16 @@ trailing-spaces-removal
 =======================
 Simple trailing spaces removal script.
 
+
+Instructions:
+-------------
+
+Installation:
+
+        $ git clone git@github.com:lenguyenthedat/trailing-spaces-removal.git
+
+Running on local directory:
+
         $ ./removes.sh .
         Input folder: .
         Going remove trailing white spaces for:
@@ -10,6 +20,8 @@ Simple trailing spaces removal script.
         ./test/some_file_with_trailing_spaces.txt
         ./test/test_child_folder/another_file_with_trailing_spaces.txt
         Are you sure to proceed? y
+
+Files changed:
 
         $ git status
         On branch master
@@ -21,6 +33,8 @@ Simple trailing spaces removal script.
             modified:   test/test_child_folder/another_file_with_trailing_spaces.txt
 
         no changes added to commit (use "git add" and/or "git commit -a")
+
+Files diff:
 
         $ git diff
         diff --git a/test/some_file_with_trailing_spaces.txt b/test/some_file_with_trailing_spaces.txt
