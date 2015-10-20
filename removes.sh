@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Input folder: $1"
+echo "Going remove trailing white spaces for:"
+find $1 -not \( -name .svn -prune -o -name .git -prune \) -type f
+read -p "Are you sure to proceed? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  # remove trailing spaces and lines
+  find $1 -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 | xargs -0 perl -pi -e 's/ +$//'
+fi
