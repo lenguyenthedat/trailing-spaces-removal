@@ -9,7 +9,7 @@ Instructions:
 Installation:
 
         $ git clone git@github.com:lenguyenthedat/trailing-spaces-removal.git
-        $ cp tsrm /usr/local/bin/ # optional
+        $ ./install # cp tsrm /usr/local/bin/
 
 Running on local directory:
 
